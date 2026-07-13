@@ -1,4 +1,4 @@
-from ..Datos.messages import messages
+from Datos.messages import messages
 
 class AliveService: 
     def __init__(self):

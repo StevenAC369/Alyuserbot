@@ -1,5 +1,5 @@
-from ..Entidad.commands import ConmandInfo
-from ..Datos.ConmandsRepository import ComandsRepository
+from Entidad.commands import ConmandInfo
+from Datos.ConmandsRepository import ComandsRepository
 
 class HelpService: 
     def __init__(self):

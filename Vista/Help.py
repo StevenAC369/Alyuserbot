@@ -1,5 +1,3 @@
-
-
 from telethon import events
 
 def help_handler(client, handler,comands, sudoers):
@@ -12,7 +10,7 @@ def help_handler(client, handler,comands, sudoers):
 
         texto = "**📋 Comandos disponibles:**\n\n"
         for c in comands:
-            etiqueta = " (admin)" if c.solo_admins else ""
-            texto += f"`.{c.nombre}`{etiqueta} — {c.descripcion}\n"
-
+            # etiqueta = " (sudo)" if c.sudo else ""
+            texto += f"`.{c.nombre}` —{c.descripcion}\n"
+ 
         await event.edit(texto)
